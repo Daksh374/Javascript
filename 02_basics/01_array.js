@@ -15,8 +15,13 @@ console.log(myArr1);
 // myArr.pop()
 // console.log(myArr);
 
-myArr.unshift(8)            //Used to enter element in starting of array
+myArr.unshift(8)           //Used to enter element in starting of array
 console.log(myArr);
+
+myArr.shift()      //Used to delete the unshift element
+
+
+console.log(myArr.includes(1));
 
 
 
