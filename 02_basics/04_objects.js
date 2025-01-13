@@ -34,6 +34,27 @@ console.log(Object.entries(tinderUser))
 
 console.log(tinderUser.hasOwnProperty('name'));     // To check that Key exists in Object or not
 
+const course = {
+    coursename: "Javascript in Hindi",
+    price: "999",
+    instructor: "Hitesh Chaudhary"
+}
+
+//console.log(course.instructor)
+
+const {coursename: n} = course       // destructure the object using (:)  //Used to prevent using . operator
+console.log(n);
+
+
+//JSON
+// {
+//     "coursename": "Javascript in Hindi",
+//     "price": "999",
+//     "instructor": "Hitesh Chaudhary"
+
+// }
+
+
 
 
 
