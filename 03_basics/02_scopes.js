@@ -18,7 +18,7 @@ function one(){
         const website = "youtube"
         console.log(username);
     }
-    // console.log(website);
+    // console.log(website);       // It will declare a error as scope is outside 
 
      two()
 
@@ -32,7 +32,7 @@ if (true) {
         const website = " youtube"
         // console.log(username + website);
     }
-    // console.log(website);
+    // console.log(website);          // it will return a error as scope is outside
 }
 
 // console.log(username);
@@ -49,7 +49,7 @@ function addone(num){
 
 
 
-addTwo(5)
-const addTwo = function(num){
+const addTwo = function(num){       // 2nd syntax to declare a function
     return num + 2
 }
+addTwo(5)
