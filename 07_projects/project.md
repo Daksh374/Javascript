@@ -141,7 +141,7 @@ function displayMessage(message) {
 
 function endGame() {
   userInput.value = '';
-  userInput.setAttribute('disabled', '');
+  userInput.setAttribute('disabled', ''); //setAttribute is enabled with key value pair
   p.classList.add('button');
   p.innerHTML = `<h2 id="newGame">Start new Game</h2>`;
   startOver.appendChild(p);
