@@ -9,14 +9,22 @@
     <h1>Chai aur Javascript</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
+
+    <script>
+        let intervalId;
+        const sayDate = function(){
+            console.log("Hello Daksh , Time is =>", new Date().toLocaleTimeString());
+        }
+
+        document.querySelector('#start').addEventListener('click', function(){
+            intervalId = setInterval(sayDate, 1000);
+            
+        });
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearInterval(intervalId);
+            console.log("STOPPED");
+        });
+    </script>
 </body>
-<script>
-    const sayDate = function(str){
-        console.log(str, Date.now());
-    }
-
-    const intervalId = setInterval(sayDate, 1000, "hi")
-
-    clearInterval(intervalId)
-</script>
 </html>
