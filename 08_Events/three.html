@@ -12,18 +12,20 @@
 
     <script>
         let intervalId;
+
         const sayDate = function(){
-            console.log("Hello Daksh , Time is =>", new Date().toLocaleTimeString());
+            console.log("hi", new Date().toLocaleTimeString());
         }
 
         document.querySelector('#start').addEventListener('click', function(){
-            intervalId = setInterval(sayDate, 1000);
-            
+            if (!intervalId) {
+                intervalId = setInterval(sayDate, 1000);
+            }
         });
 
         document.querySelector('#stop').addEventListener('click', function(){
             clearInterval(intervalId);
-            console.log("STOPPED");
+            intervalId = null; // Reset so it can be restarted
         });
     </script>
 </body>
